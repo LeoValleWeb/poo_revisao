@@ -37,6 +37,12 @@ public class Aluno{
 
     }
     public void cadastrar(String nome){
-        
+        this.nome=nome;
+    }
+    public boolean verificarSituação(){
+        if((media<5) || (numFaltas<25)){
+           return false; 
+        }
+        return true;
     }
 }
